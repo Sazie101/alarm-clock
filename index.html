@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Samuel Yazie">
+        <title>Samuel Yazie Portfolio</title>
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <!-- 'defer' is not required when you use modules ;) -->
+        <script src="./assets/script/index.js" type="module"></script>
+    </head>
+    <body>
+        <main>
+            <audio id="alarmSound" src="./assets/sounds/mixkit-digital-clock-digital-alarm-buzzer-992.wav" preload="auto"></audio>
+            <div class="container">
+                <div class="clock">
+                    <div class="time hour">
+                      <p id="hours"></p>
+                    </div>
+                    <div class="colon">
+                        <p>:</p>
+                    </div>
+                    <div class="time minute">
+                      <p id="minutes"></p>         
+                    </div>
+                </div>
+                <div class="alarm">
+                    <p><img src="./assets/img/bell-solid.svg" width="15" height="15"></p>
+                    <p class="alarmSet"></p>
+                </div>
+                <form class="set">
+                    <input class="setHour" type="text" placeholder="HH">
+                    <input class="setMinute" type="text" placeholder="MM">
+                    <button class="submit">Submit</button>
+                </form>
+                <div>
+                    <p class="setInfo"></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
